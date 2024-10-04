@@ -1,0 +1,9 @@
+{
+    "token": "YOUR_BOT_TOKEN_HERE",
+    "language": "english",
+
+    "activity_type": "playing",
+    "activity_name": "Pteroller",
+
+    "pingserver": "1.1.1.1"
+}
