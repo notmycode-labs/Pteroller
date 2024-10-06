@@ -52,7 +52,6 @@ class SlashCommands(commands.Cog):
     
     @discord.app_commands.command(name="information", description="Get bot information.")
     async def information(self, interaction: discord.Interaction):
-        language = config['language']
         app_info = await self.bot.application_info()
         try:
             GetServerCount = requests.get(API_URL, headers=headers)
