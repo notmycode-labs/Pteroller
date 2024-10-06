@@ -41,14 +41,14 @@ class CogHandler(FileSystemEventHandler):
     async def reload_cog(self, path):
         cog_name = os.path.basename(path)[:-3]
         try:
-            channel = self.bot.get_channel(1290326322585010288)
+            channel = self.bot.get_channel(1291398870915612713)
             await channel.send(f'Reloading {os.path.basename(path)}')
 
             await self.bot.unload_extension(f'commands.{cog_name}')
             await self.bot.load_extension(f'commands.{cog_name}')
             await self.sync_commands()
         except Exception as e:
-            channel = self.bot.get_channel(1290326322585010288)
+            channel = self.bot.get_channel(1291398870915612713)
             await channel.send(f'I failed to reload {cog_name}. Here’s error: {e}')
             print(f'Failed to reload {cog_name}: {e}')
 

@@ -1,9 +1,10 @@
 {
-    "token": "YOUR_BOT_TOKEN_HERE",
-    "language": "english",
+    "token": "BOT_TOKEN",
 
     "activity_type": "playing",
     "activity_name": "Pteroller",
 
-    "pingserver": "1.1.1.1"
+    "pingserver": "1.1.1.1",
+    "API_URL": "https://pteroller.xyz/api/client",
+    "API_KEY": "API_KEY"
 }
